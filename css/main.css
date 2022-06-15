@@ -1,0 +1,230 @@
+:root{
+  --header-bgcolor: #FFFFFF;
+  --main-bodycolor: #F2F2F2;
+  --color-bk: #FFFFFF;
+}
+
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/nunito-sans-v12-latin-300.woff2') format('woff2'),
+       url('../fonts/nunito-sans-v12-latin-300.woff') format('woff'); 
+}
+
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/nunito-sans-v12-latin-600.woff2') format('woff2'), 
+       url('../fonts/nunito-sans-v12-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/nunito-sans-v12-latin-800.woff2') format('woff2'), 
+       url('../fonts/nunito-sans-v12-latin-800.woff') format('woff'); 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  background-color: var(--main-bodycolor);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 23px 0;
+  
+  background-color: var(--header-bgcolor);
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.header__inner{
+display: flex;justify-content: space-between;
+align-items: center;
+overflow: hidden;
+}
+
+.header__name{
+  text-decoration: none;
+}
+
+.header__img{
+  vertical-align: middle;
+}
+
+.header__btn{
+  border: none;
+  background-color: transparent;
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #111517;
+position: relative;
+}
+
+.header__btn::before{
+  content: "";
+  width: 15px;
+  height: 14px;
+  background-image: url(../img/Path.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+position: absolute;
+top: 5px;
+left: -14px;
+}
+
+
+.hero{
+  padding-bottom: 60px;
+}
+
+.hero__form{
+  margin: 48px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__input{
+  width: 480px;
+  background-color: var(--color-bk);
+  padding: 18px 18px 18px 70px;
+  border: none;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+border-radius: 5px;
+outline: none;
+}
+
+.form__input::placeholder{
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #848484;
+}
+
+.form__label{
+  position: relative;
+}
+
+.form__label::before{
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-image: url(../img/lupa.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 16px;
+  left: 26px;
+}
+
+.form__select{
+  border: none;
+width: 200px;
+padding: 18px 20px;
+background-color: var(--color-bk);
+box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+border-radius: 5px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #111517;
+outline: none;
+}
+
+.form__option{
+  outline: none;
+}
+
+.hero__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__item{
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+border-radius: 5px;
+}
+
+.hero__item-margin{
+  margin-bottom: 67px;
+}
+
+.menu__img{
+  vertical-align: middle;
+}
+
+.menu__info{
+  padding: 24px 24px 46px 24px;
+  background-color: var(--color-bk);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.menu__title{
+  margin: 0;
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 26px;
+color: #111517;
+margin-bottom: 16px;
+}
+
+.menu__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item{
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+color: #1c262b;
+margin-bottom: 8px;
+}
